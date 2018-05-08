@@ -74,7 +74,7 @@ else if (scelta==2){
 }
 
 
-indirizzo_1:
+indirizzo_1: {
 cout<<"Inserisci l'indirizzo di memoria (es: 1800/01)"<<endl;
 cin>>address1;
 cout<<endl;
@@ -88,7 +88,7 @@ if (scelta2=="y","Y"){
         cout<<"Inserisci i valori da inserire all'interno di "<<incremento<<endl;
         cin>>valore1;
         cout<<endl;
-        cout<<"All'interno della memoria "<<incremento<<"e' presente il seguente valore: "<<valore1<<endl;
+        cout<<"All'interno della memoria "<<incremento<<" e' presente il seguente valore: "<<valore1<<endl;
         cout<<endl;
 
 
@@ -98,12 +98,74 @@ else if (scelta2=="n","N"){
     cout<<"Inserisci i valori da inserire all'interno di "<<address1<<endl;
     cin>>valore1;
     cout<<endl;
-    cout<<"All'interno della memoria "<<address1<<"e' presente il seguente valore: "<<valore1<<endl;
+    cout<<"All'interno della memoria "<<address1<<" e' presente il seguente valore: "<<valore1<<endl;
     cout<<endl;
 
 }
+}
+goto fine;
 
-indirizzo_2:
+//Inizio 2 memorie
+
+indirizzo_2:{
+cout<<"Inserisci l'indirizzo di memoria (es: 1800/01)"<<endl;
+cin>>address1;
+cout<<endl;
+
+cout <<"Inserisci l'indirizzo della seconda memoria "<<endl;
+cin>>address2;
+cout<<endl;
+
+//If della memoria numero 1
+cout<<"Vuoi incrementare il valore dellla memoria : "<<address1<<" ? (Y o N)"<<endl;
+cin>>scelta2;
+if (scelta2=="y","Y"){
+    int incremento1;
+    incremento1=address1+1;
+    cout<<"La tua memoria adesso vale: "<<incremento1<<endl;
+    cout<<endl;
+    int valore1;
+    cout<<"Inserisci il valore all'interno di "<<incremento1<<endl;
+    cin>>valore1;
+    cout<<"All'interno della memoria "<<incremento1<<" hai inserito il valore: "<<valore1<<endl;
+    cout<<endl;
+
+}
+else if(scelta2=="n","N"){
+    int valore1;
+    cout<<"Inserisci il valore all'interno di "<<address1<<endl;
+    cin>>valore1;
+    cout<<"All'interno della memoria "<<address1<<" hai inserito il valore: "<<valore1<<endl;
+    cout<<endl;
+}
+
+// Inizio if della seconda memoria
+string scelta3;
+cout<<"Vuoi aumentare il valore della memoria: "<<address2<<"? (Y o N)"<<endl;
+cin>>scelta3;
+if (scelta3=="y","Y"){
+    int incremento2;
+    incremento2=address2+1;
+    cout<<"La tua memoria adesso e': "<<incremento2<<endl;
+    cout<<endl;
+    int valore2;
+    cout<<"Inserisci il valore all'interno di "<<incremento2<<endl;
+    cin>>valore2;
+    cout<<"All'interno della memoria "<<incremento2<<" hai inserito il valore: "<<valore2;
+    cout<<endl;
+    cout<<address2<<endl;
+}
+else if(scelta3=="n","N"){
+    int valore2;
+    cout<<"Inserisci il valore all'interno di "<<address2<<endl;
+    cin>>valore2;
+    cout<<endl;
+    cout<<"All'interno della memoria "<<address2<<" hai inserito il valore: "<<valore2;
+    cout<<endl;
+}
+}
+
+
 
 
 
@@ -185,7 +247,7 @@ open:
 
 
 
-
+fine:
     cout << "Z80 SCRIPT FOR PERSONAL LANGUAGE" << endl;
     cout<<endl;
     cout<<"INCOMPLETE"<<endl;
