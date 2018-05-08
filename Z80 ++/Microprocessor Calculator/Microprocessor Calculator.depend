@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1525801313 source:c:\users\nicholas impieri\desktop\z80 ++\microprocessor calculator\main.cpp
+	<iostream>
+	<string>
+
