@@ -22,3 +22,8 @@ Il mio script utilizza queste funzioni per la programmazione di un'intero sistem
 senza l'ausilio di una mainboard con programmatore integrato.
 
 Tuttavia richiede una mainboard con installato AXIC.
+
+# Sito Internet
+
+E' possibile scaricare le build per Windows,Mac,Linux e Solaris direttamente dal sito internet cliccando <a href="http://z80plus.altervista.org/download.html">Qua</a>, o scaricare il sorgente in archivio zip visitanto la pagina
+<a href="https://github.com/anonik9900/Z80-microprocessor-personal-script/releases">Release</a>.
