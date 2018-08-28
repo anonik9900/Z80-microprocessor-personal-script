@@ -19,6 +19,7 @@ int main()
 
 int scelta;
 string scelta2;
+string help;
 int nand1;
 int nand2;
 int nor1;
@@ -62,7 +63,35 @@ cout<<"Z80 IN C++ BY NICHOLAS IMPIERI "<<endl;
 cout<<endl;
 cout<<"----------------------------------"<<endl;
 cout<<endl;
+cout<<"Type help to see all comands or Type Run to start"<<endl;
+cout<<endl;
+cin>>help;
+cout<<endl;
+if (help=="help"){
+    cout<<endl;
+    cout<<"-------------------------------------"<<endl;
+    cout<<"Z80++ HELP GUIDE BY NICHOLAS IMPIERI"<<endl;
+    cout<<"-------------------------------------"<<endl;
+    cout<<endl;
+    cout<<"* Create Memory Address Type (1) or (2)"<<endl;
+    cout<<endl;
+    cout<<"* 1 == Create  Unlimited Memory Address"<<endl;
+    cout<<endl;
+    cout<<"* 2 == Create Only 2 Memory Address (beta Only)"<<endl;
+    cout<<endl;
+    cout<<"* Type 0 (zero) to close the software"<<endl;
+    cout<<endl;
+    cout<<"---------------------------------------"<<endl;
+    cout<<"                 END                    "<<endl;
+    cout<<"---------------------------------------"<<endl;
+    cout<<endl;
+    goto fine;
+}
 
+if (help="Run","run"){
+    goto start;
+}
+start:
 cout<<"Quanti indirizzi devi inserire ?"<<endl;
 cin>>scelta;
 
@@ -73,6 +102,10 @@ else if (scelta==2){
     goto indirizzo_2;
 }
 else if (scelta>=3){
+    goto fine;
+}
+
+else if (scelta==0);{
     goto fine;
 }
 
@@ -94,11 +127,13 @@ if(scelta2=="n","N"){
 
 }
 
-else if (scelta2=="y","Y"){
-        int incremento;
-        int somma;
-        somma=address1;
-         (incremento=somma+1);
+if (scelta2=="y","Y"){
+
+int incremento;
+int somma;
+somma=address1;
+(incremento=somma+1);
+
         cout<<"La tua memoria adesso e' "<<incremento<<endl;
         cout<<endl;
         string valore1;
@@ -107,8 +142,11 @@ else if (scelta2=="y","Y"){
         cout<<endl;
         cout<<"All'interno della memoria "<<incremento<<" e' presente il seguente valore: "<<valore1<<endl;
         cout<<endl;
+        goto indirizzo_1;
 
 }
+
+
 
 
 goto fine;
@@ -199,7 +237,7 @@ else if(scelta3=="n","N"){
 // Dichiarazione delle allocazioni di memoria
 
 
-
+//singature//.AXIC_START
 
 
 //SIMPLE ADDRESS
@@ -277,6 +315,6 @@ open:
 fine:
     cout << "Z80 SCRIPT FOR PERSONAL LANGUAGE" << endl;
     cout<<endl;
-    cout<<"INCOMPLETE"<<endl;
+    cout<<"Builded for AXIC SCHOOL SYSTEM IT"<<endl;
     return 0;
 }
