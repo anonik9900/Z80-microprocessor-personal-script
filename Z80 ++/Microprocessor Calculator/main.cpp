@@ -142,7 +142,7 @@ somma=address1;
         cout<<endl;
         cout<<"All'interno della memoria "<<incremento<<" e' presente il seguente valore: "<<valore1<<endl;
         cout<<endl;
-        goto indirizzo_1;
+        goto start;
 
 }
 
@@ -316,5 +316,6 @@ fine:
     cout << "Z80 SCRIPT FOR PERSONAL LANGUAGE" << endl;
     cout<<endl;
     cout<<"Builded for AXIC SCHOOL SYSTEM IT"<<endl;
+    system("pause");
     return 0;
 }
